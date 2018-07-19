@@ -1,0 +1,227 @@
+  /* COLOR: #287da8 */
+/*
+  CSS Code vereinfachen mit LESS Mitteln (mit CSS: 220 Zeilen. HTML wurde von 450 auf 170 Zeilen verkuerzt gegenüber Originalseite)
+  Wartbarkeit erhoehen:
+- hard coded values durch LESS Variable ersetzen (@)
+- einige Kommentare zum besseren Verstaendnis ergänzen
+- evtl. ID/Klassenstruktur vereinfachen
+*/
+      @media(min-width: 70em){ 
+        body{
+         padding-right: 7em;
+         padding-left: 7em;
+          font-family: 'myriad-pro','Myriad Pro',Arial,sans-serif;
+        }
+        body top{
+          margin-left: -8em;
+        }
+      }
+      @media(max-width: 50em){
+        main .col-3{
+          visibility: hidden;
+          list-style: none;
+        }
+        main .col-9{
+          margin-left: -23%;
+        }
+        #breadcrump{
+          visibility: hidden;
+        }
+        #logo p{
+          visibility: hidden;
+        }
+        footer{
+          flex-direction: column;
+        }
+        footer ul{
+          border-bottom: 1px solid #ffffff;
+          padding-bottom: 1.2em;
+        }
+        header{
+          visibility: hidden;
+        }
+        #navi{
+          flex-direction: column;
+        }
+      }
+      top {
+        background-color: #287da8;
+        min-width: 100%;
+        position: absolute;
+        padding-left: 2em;
+        margin-left:0;
+      }
+      top a{
+        font-size: .875em;
+        display: block;
+        color: #fff;
+      }
+      top a:hover{
+        color: #fff;
+      }
+      #logo p{
+        position: inline;
+        line-height: .75em;
+        font-size: 2em;
+        color: #287da8;
+        padding-left: 1em;
+        display: inline-block;
+      }
+      #logo img{
+          display: inline-block;
+      }
+      #logo ul{
+        list-style: none;
+        display: inline;
+      }
+      #logo .col-11 ul{
+        padding-left: 2em;
+        margin-top: 2em;
+      }
+      header{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        margin-top: 1em;
+        font-size: 0.8em;
+      }
+      header a{
+        padding-right: 2em;
+      }
+      #navi{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        vertical-align: middle;
+      }
+      #navi .active{
+        background-color: #287da8;
+        color: #ffffff;
+      }
+      #navi a{
+        color: #287da8;
+        display: inline;
+        min-width: 7em;
+        text-align: center;
+        min-height: 1em;
+      }
+      #navi a:hover{
+        color: #ffffff;
+        background-color: #287da8;
+      }
+      @media(min-width: 65em){
+        #navi a:hover+#themen,#navi a:hover+#service,#navi a:hover+#stralsund{
+          visibility: visible;
+        }
+        #navi #themen:hover,#navi #service:hover,#navi #stralsund:hover{
+          visibility: visible;
+        }
+        #navi #themen a:hover,#navi #service a:hover,#navi #stralsund a:hover{
+          color:#000000;
+          background-color: #e7f7fd;
+        }
+      }
+      #themen,#stralsund,#service{
+        visibility: hidden;
+        display: block;
+        position: absolute;
+        background-color: #e7f7fd;
+        width: 100%;
+        margin-top: 2.5em;
+        padding-top: 0;
+        border: 1px solid #287da8;
+        padding-bottom: 1em;
+        z-index:999;
+      }
+      #themen a,#stralsund a,#service a{
+        color: #000000;
+      }
+      
+      .navbar{
+        border-bottom: 1px solid #287da8;
+        border-top: 1px solid #287da8;
+        margin: 0;
+        padding: 0;
+        margin-top: 2em;
+      }
+      #breadcrump{
+        display: flex;
+        width: 100%;
+        background-color:#e7f7fd;
+        padding-top: 0.5em;
+        padding-left: 0.5em;
+        padding-bottom: 0;
+        margin: 0;
+        margin-bottom: 1em;
+        justify-items: flex-start;
+      }
+      #breadcrump *{
+        font-size: 0.8em;
+      }
+      main h1{
+        font-family: 'myriad-pro','Myriad Pro',Arial,sans-serif;
+        color: #287da8;
+        font-size: 2em;
+        margin-bottom: 0.7em;
+      }
+      main p{
+        color:#666;
+        font-size: 1.125em;
+        line-height: 1.5em;
+      }
+      main a:focus, main a:hover {
+       text-decoration: underline;
+      }
+      main a{
+        color: #666;
+        font-size: 1.125em;
+      }
+      main .row{
+        margin-top: 3em;
+      }
+      main:target{
+        font-size: 1.3em;
+      }
+      .row .col-3 .active{
+        color:#287da8;
+      }
+      .row .col-3{
+        padding-left: 0;
+      }
+      footer{
+        display: flex;
+        margin-top: 30px;
+        padding-top:0.3em;
+        padding-bottom: 2em;
+        background-color: #287da8;
+        color: #fff;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        ul{
+          margin-left: -1.5em;
+          margin-top: 1em;
+        }
+         big{
+          font-size: 1.125em;
+        }
+         #sec{
+          flex: 0 0 auto;
+          width: 25%;
+        }
+      } 
+      footer a{
+        margin-left: 0;
+        color: #fff;
+        font-size: .875em;
+      }
+      footer a:hover{
+        color:#fff;
+      }
+      #contact ul{
+        list-style: none;
+        margin-left: -2.5em;
+      }
+      #contact h1{
+        font-size: 1.1em;
+      }
