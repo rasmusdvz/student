@@ -1,5 +1,7 @@
 Entwickle eine Website zur Analyse von Logfiles.
 
+http://..../student/loganalxse/index.php?file=filebeat-tomcat-log-events.json
+
 
 http://bootstrap-table.wenzhixin.net.cn/  ACHTUNG: Bootstrap 3
 Demo: http://issues.wenzhixin.net.cn/bootstrap-table/welcome.html
@@ -15,10 +17,10 @@ $('#table').bootstrapTable({
     url: 'logs/filebeat-tomcat-log-events.json',
     columns: [{
         field: 'id',
-        title: 'Item ID'
+        title: 'id'
     }, {
         field: 'name',
-        title: 'Item Name'
+        title: 'name'
     }, {
         field: 'price',
         title: 'Item Price'
