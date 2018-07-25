@@ -1,0 +1,244 @@
+  /* COLOR: #287da8 */
+/*
+  CSS Code vereinfachen mit LESS Mitteln (mit CSS: 260 Zeilen. HTML wurde von 450 auf 170 Zeilen verkuerzt gegenüber Originalseite)
+  Wartbarkeit erhoehen:
+- hard coded values durch LESS Variable ersetzen (@)
+- einige Kommentare zum besseren Verstaendnis ergaenzen
+- evtl. ID/Klassenstruktur vereinfachen
+*/
+      
+  @mainblue: #287da8;
+  @weakblue: #e7f7fd;
+  @gray: #666;
+  @background: #fff;
+  @maincolor: #000;
+  @fontsmall: 0.75em;
+  @fontmedium: 1.125em;
+  @fontlarge: 1.3em;
+  @fonthead: 2em;
+  @smallpad: 0.5em;
+  @mediumpad: 1em;
+  @largepad: 2em; //same as @fonthead but used for padding and margin
+  @border: 1px;
+  @font: 'myriad-pro','Myriad Pro',Arial,sans-serif;
+
+  @media(min-width: 70em){ 
+    body{
+     padding-right: 7em;
+     padding-left: 7em;
+     font-family: @font;
+     top{
+        margin-left: -8em;
+      }
+    }
+  }
+  @media(max-width: 50em){
+    main{ 
+      .col-3{
+      visibility: hidden;
+      list-style: none;
+      }
+      .col-9{
+      margin-left: -23%;
+      }
+    } 
+    #breadcrump,#logo p,header{
+      visibility: hidden;
+    }
+    footer{
+      flex-direction: column;
+      ul{
+        border-bottom: @border solid @background;
+        padding-bottom: @mediumpad;
+      }
+      *{
+        margin-left: @mediumpad;
+      }
+    }
+    .navi{
+      flex-direction: column;
+    }
+  }
+  body{
+    font-size: @fontmedium;
+    background-color: @background;
+  }
+  top {
+    background-color: @mainblue;
+    min-width: 100%;
+    position: absolute;
+    padding-left: @largepad;
+    margin-left: 0;
+    a{
+      font-size: @fontsmall;
+      display: block;
+      color: @background;
+      &:hover{
+        color: @background;
+      }
+    }
+  }
+  header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin-top: @mediumpad;
+    font-size: @fontsmall;
+    a{
+      padding-right: @largepad;
+    }
+  }
+  #logo{
+    p{
+      position: inline;
+      line-height: .75em;
+      font-size: @fonthead;
+      color: @mainblue;
+      padding-left: @mediumpad;
+    }
+    p,img{
+      display: inline-block;
+    }
+    ul{
+      list-style: none;
+      display: inline;
+    }
+    .col-11 ul{
+      padding-left: @largepad;
+      margin-top: @largepad;
+    }
+  }
+  .navi{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    .active{
+      background-color: @mainblue;
+      color: @background;
+    }
+    a{
+      color: @mainblue;
+      display: inline;
+      min-width: 7em;
+      text-align: center;
+      min-height: 1em;
+      &:hover{
+        color: @background;
+        background-color: @mainblue;
+      }
+    }
+  }
+  .dropdown{
+    visibility: hidden;
+    display: block;
+    position: absolute;
+    background-color: @weakblue;
+    width: 100%;
+    margin-top: 2.5em !important;
+    padding-top: 0;
+    border: @border solid @mainblue;
+    padding-bottom: @mediumpad;
+    z-index:999;
+    a{
+      color:@maincolor;
+    }
+  }
+  .navbar{
+    border-bottom: @border solid @mainblue;
+    border-top: @border solid @mainblue;
+    margin: 0;
+    padding: 0;
+    margin-top: @largepad;
+  }
+  @media(min-width: 65em){  
+    .navbar-nav{
+      a:hover+.dropdown,.dropdown:hover{
+          visibility: visible;
+      }
+      .dropdown a:hover{
+        color:@maincolor;
+        background-color: @weakblue;
+      }
+    }
+  }
+  #breadcrump{
+    display: flex;
+    width: 100%;
+    background-color: @weakblue;
+    padding-top: @smallpad;
+    padding-left: @smallpad;
+    padding-bottom: 0;
+    margin: 0;
+    margin-bottom: @mediumpad;
+    justify-items: flex-start;
+    *{
+      font-size: @fontsmall;
+    }
+  }
+  main{
+    h1{
+      color: @mainblue;
+      font-size: @fonthead;
+      margin-bottom: @smallpad;
+    }
+    p{
+      color:@gray;
+      line-height: 1.5em;
+    }
+    a{
+      color: @gray;
+      &:focus,&:hover{
+         text-decoration: underline;
+        color: @gray;
+      }
+    }
+    .row{
+      margin-top: 3em;
+    }
+    &:target{
+      font-size: @fontlarge;
+    }
+  }
+  .row .col-3{
+     padding-left: 0;
+    .active{
+      color:@mainblue;;
+    }
+   }
+  footer{
+    display: flex;
+    margin-top: @mediumpad;
+    padding-bottom: @largepad;
+    background-color: @mainblue;
+    color: @background;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    ul{
+      margin-left: -1.5em;
+    }
+    big{
+      font-size: @fontmedium;
+    }
+    #sec{
+      flex: 0 0 auto;
+      width: 25%;
+    }
+    a{
+      margin-left: 0;
+      color: @background;
+      font-size: @fontsmall;
+      &:hover{
+        color: @background;
+      }
+    }
+    #contact{
+      ul{
+        list-style: none;
+        margin-left: -2.5em;
+      }
+      h1{
+        font-size: @fontmedium;
+      }
+    }
+  }  

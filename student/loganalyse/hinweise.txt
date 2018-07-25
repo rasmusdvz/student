@@ -1,0 +1,27 @@
+Entwickle eine Website zur Analyse von Logfiles.
+
+
+http://bootstrap-table.wenzhixin.net.cn/  ACHTUNG: Bootstrap 3
+Demo: http://issues.wenzhixin.net.cn/bootstrap-table/welcome.html
+  
+  Ganzen Bildschirm ausnutzen!
+  Extensions ? Ausprobieren, demonstrieren
+  
+  
+  
+  We can also use remote url data by setting url: ...
+
+$('#table').bootstrapTable({
+    url: 'logs/filebeat-tomcat-log-events.json',
+    columns: [{
+        field: 'id',
+        title: 'Item ID'
+    }, {
+        field: 'name',
+        title: 'Item Name'
+    }, {
+        field: 'price',
+        title: 'Item Price'
+    }, ]
+});
+
