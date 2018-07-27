@@ -13,6 +13,8 @@ Demo: http://issues.wenzhixin.net.cn/bootstrap-table/welcome.html
   
   We can also use remote url data by setting url: ...
 
+http://apache-php7-mysql-phpmyadmin-rasmus381710.codeanyapp.com/student/bootstraptable/logs/filebeat-tomcat-log-events.json
+
 $('#table').bootstrapTable({
     url: 'logs/filebeat-tomcat-log-events.json',
     columns: [{

@@ -1,0 +1,44 @@
+@bodybackground: #bbbbff;
+@backgroundcolor1: #9999ff;
+@backgroundcolor2: #9999cc;
+@headercolor: #000;
+@textcolor: #333;
+@fontsize: 1.4em;
+@fontsizebig: 1.8em;
+@bordercolor: #000;
+@distancedown: 4em;
+
+
+body{
+  background-color: @bodybackground;
+  p{
+    color: @headercolor;
+    font-size: 2.5em;
+    text-align: center;
+  }
+  a{
+    color: @textcolor;
+    font-size: @fontsize;
+    &:hover{
+      color: @textcolor;
+    }
+  }
+  .mb-0 button{
+    color: @headercolor;
+    font-size: @fontsizebig;
+    &:hover{
+      color: @headercolor;
+    }
+  }
+  .card{
+    &:nth-child(odd){
+      background-color: @backgroundcolor1;
+    }
+    &:nth-child(even){
+      background-color: @backgroundcolor2;
+    }
+    &:last-child{
+      margin-bottom: @distancedown;
+    }
+  }
+}

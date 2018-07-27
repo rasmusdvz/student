@@ -1,0 +1,114 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flexbox</title>
+    <style>
+      body div{
+        display: flex;
+        border: 2px solid #0000ff;
+        border-radius: 0.5em 0.5em 0.5em;
+        min-height: 10em;
+        flex-wrap: wrap;
+        background-color: #ccccff;
+      }
+      h1{
+        font-size: 2em;
+        text-align: center;
+        font-weight: bold;
+      }
+      #rowbox{
+        flex-direction: row;
+      }
+      #revrowbox{
+        flex-direction: row-reverse;
+      }
+      #colbox{
+        flex-direction: column;
+      }
+      #revcolbox{
+        flex-direction: column-reverse;
+      }
+      #header{
+        justify-content: flex-end;
+        border: 0;
+        align-items: center;
+        min-height:15%;
+      }
+      * section{
+        min-height: 10em;
+        min-width: 10em;
+        border: 1px solid #000000;
+        border-radius: 0.5em 0.5em 0.5em;
+        flex: 1 1 auto;
+        font-size: 1.5em;
+        text-align: center;
+        font-weight: bold;
+      }
+      #header section{
+        min-width: 15%;
+        width: 15%;
+        border: 0;
+        flex: 0;
+        min-height:15%;
+      }
+      #box section{
+        width: 45%;
+      }
+      #box .side{
+        width: 100%;
+      }
+      #header h2{
+        text-align: left;
+        width: 35%;
+        min-width: 35%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="header">
+        <h2>Flexbox</h2>
+        <section><a>Link 1</a></section>
+        <section><a>Link 2</a></section>
+        <section><a>Link 3</a></section>
+        <section><a>Link 4</a></section>
+      </div>
+    </header>
+    <h1>Rowbox</h1>
+    <div id="rowbox">
+      <section>Box 1</section>
+      <section>Box 2</section>
+      <section>Box 3</section>
+      <section>Box 4</section>
+    </div>
+    <h1>Revrowbox</h1>
+    <div id="revrowbox">
+      <section>Box 1</section>
+      <section>Box 2</section>
+      <section>Box 3</section>
+      <section>Box 4</section>
+    </div>
+    <h1>Colbox</h1>
+    <div id="colbox">
+      <section>Box 1</section>
+      <section>Box 2</section>
+      <section>Box 3</section>
+      <section>Box 4</section>
+    </div>
+    <h1>Revcolbox</h1>
+    <div id="revcolbox">
+      <section>Box 1</section>
+      <section>Box 2</section>
+      <section>Box 3</section>
+      <section>Box 4</section>
+    </div>
+     <h1>Box</h1>
+    <div id="box">
+      <section>Box 1</section>
+      <section>Box 2</section>
+      <section class="side">Box 3</section>
+      <section>Box 4</section>
+      <section>Box 5</section>
+    </div>
+  </body>
+</html>
