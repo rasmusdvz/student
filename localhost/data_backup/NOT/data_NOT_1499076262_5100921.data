@@ -1,0 +1,5 @@
+id§NOT_1499076262_5100921°datum§07.07.2017°DatumE§2017-07-07-00-00-00_NOT_1499076262_5100921°quelle§persistent°name§WEM Betrieb wöchentlich°kategorien§.wem.betrieb .wem.admin°info§°text§<br/>-----<br/><p>cp -rp &nbsp;/opt/opentext/bin &nbsp;~rasmus/tmp/opt-opentext-bin; <br />cp -rp &nbsp;/etc/apache2 &nbsp;~rasmus/tmp/etc-apache2; <br />cp -rp /opt/as/tomcat/apache-tomcat-7.0.54/conf ~rasmus/tmp/opt-as-tomcat-tomcat7;<br />cp -rp /opt/as/tomcat/apache-tomcat-7.0.54/bin ~rasmus/tmp/opt-as-tomcat-tomcat7;<br />chmod -R 777 ~rasmus/tmp/*;</p>
+<p>&nbsp;</p>
+<p>928:</p>
+<p>cp -rp &nbsp;/opt/opentext/bin &nbsp;~rasmus/tmp/opt-opentext-bin;&nbsp;<br />cp -rp &nbsp;/etc/apache2 &nbsp;~rasmus/tmp/etc-apache2;&nbsp;<br />cp -rp /opt/as/tomcat/apache-tomcat-7.0.72/conf ~rasmus/tmp/opt-as-tomcat-tomcat7;<br />cp -rp /opt/as/tomcat/apache-tomcat-7.0.72/bin ~rasmus/tmp/opt-as-tomcat-tomcat7;<br />cp -rp /opt/as/tomcat/apache-tomcat-7.0.72-delivery/conf ~rasmus/tmp/opt-as-tomcat-tomcat7-delivery;<br />cp -rp /opt/as/tomcat/apache-tomcat-7.0.72-delivery/bin ~rasmus/tmp/opt-as-tomcat-tomcat7-delivery;</p>
+<p>chmod -R 777 ~rasmus/tmp/*;</p>°date§11.4.2017°files§

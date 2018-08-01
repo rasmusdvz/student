@@ -1,0 +1,41 @@
+id§NOT_1499076262_9127960°quelle§persistent°datum§07.07.2017°DatumE§2017-07-07-00-00-00_NOT_1499076262_9127960°name§Handbuch Ralfs Notes | HELP | README°kategorien§.anderes °info§°text§<h1>Note - Dokumente (Eintr&auml;ge)</h1>
+<p>Note-Eintr&auml;ge k&ouml;nnen sein:</p>
+<ul>
+<li>Einfache / normale Notes</li>
+<li>Spezielle Notes, die eine (Sub-) Kategorie n&auml;her erl&auml;utern</li>
+<li>Notes, die als Lesezeichen qualifiziert sind</li>
+</ul>
+<h2>Spezielle Notes</h2>
+<h3>Lesezeichen</h3>
+<p>Damit eine Note&nbsp;in der Liste der Lesezeichen auftaucht, f&uuml;ge&nbsp;die Kategorie<strong> .lesezeichen</strong> hinzu.</p>
+<h3>Kategorie Beschreibungen</h3>
+<p>Damit eine Note&nbsp;in der Liste der Kategorie - Beschreibungen (.Kategorie)&nbsp;auftaucht, setze im Feld "Kategorien" folgendes ein:</p>
+<ol>
+<li>Die beschriebene Kategorie muss&nbsp;am Beginn des&nbsp;Feldes "Kategorie" stehen.</li>
+<li><strong>.kategorie</strong></li>
+<li>Eine Kategorie Beschreibung kann zus&auml;tzlich auch als .lesezeichen kategorisiert werden.</li>
+</ol>
+<p>Bsp: <strong>.url.dvzmvnma0386 .kategorie .lesezeichen</strong></p>
+<p>Damit die Kategorien und Subkategorien richtig sortiert werden, muss die&nbsp;beschriebene Kategorie zus&auml;tzlich&nbsp;am Beginn des&nbsp;Feldes "<strong>Titel</strong>" stehen.</p>
+<h2>Angabe im Feld&nbsp;Kategorie</h2>
+<p>Pro&nbsp;Eintrag k&ouml;nnen&nbsp;mehrere Kategorien durch Leerzeichen getrennt angegeben werden.</p>
+<p>Eine Kategorie beginnt immer mit Punkt.</p>
+<p>Mehrere Kategorien ohne Space (Bsp:<strong> .url.dvzmvnma0386</strong>) bilden eine Hierarchie von Kategorien -&gt; Angabe einer Subkategorie. Diese werden zB. in&nbsp;der Liste der Notes nach Kategorie alphabetisch nacheinander gelistet.</p>
+<p>Bsp:&nbsp;<strong>.url.dvzmvnma0386</strong></p>
+<h2>Angabe im Feld URL|PASSWD|KAZ Nr</h2>
+<p>Diese Angaben werden speziell ausgewertet.&nbsp;http*//* wird als Link dargestellt. Mehrere http* k&ouml;nnen angegeben werden.</p>
+<p>Trennung von info Items (zB mehrere URLs): Leerzeichen</p>
+<h2>Angaben im&nbsp;Feld Text</h2>
+<p>Links k&ouml;nnen wiki-Like angegeben werden. Es muss immer ein Ankertext angegeben werden. Ersetze hier im Beispiel XXX durch |</p>
+<p>Bsp: [http://abc.de|der anker text]</p>
+<p>Interner Links so angeben: [<strong>?submit=DocumentNote@@2015-12-11_13-12-16__show </strong>XXX&nbsp;der&nbsp;anker text]</p>
+<p>Bsp: [?submit=DocumentNote@@2015-12-11_13-12-16__show|der&nbsp;anker text]</p>
+<h1>Listen</h1>
+<p>Es gibt Listen nach Datum, nach Kategorie.</p>
+<p>Bookmarks am Beginn der Listen-Seite f&uuml;hren zu&nbsp;</p>
+<ul>
+<li><strong>.Lesezeichen</strong> : H&auml;ufig verwendete Notes. Alle Notes, die die&nbsp;Kategorie <strong>.lesezeichen</strong> haben (das ist einfach ein&nbsp;Link zur Kategorie <strong>.lesezeichen</strong>)</li>
+<li><strong>.Kategorie</strong> : Notes, die eine Kategorie n&auml;her beschreiben und dann auch zu dieser verlinken. Alle Notes, die&nbsp;die&nbsp;Kategorie&nbsp;<strong>.kategorie&nbsp;</strong>haben (das ist einfach ein&nbsp;Link zur Kategorie&nbsp;<strong>.kategorie</strong>)</li>
+<li><strong>Liste der Kats</strong> : Alphabetische Liste aller Kategorien (alle Eintr&auml;ge im Feld .kat aller Notes)</li>
+</ul>
+<p>&nbsp;</p>°date§7.1.2016°files§

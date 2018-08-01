@@ -1,0 +1,11 @@
+id§NOT_1499076262_2779785°quelle§persistent°datum§07.07.2017°DatumE§2017-07-07-00-00-00_NOT_1499076262_2779785°name§Apache localhost°kategorien§.software.apache°info§°text§<ul>
+<li>ubuntu workbox hochfahren, startet auch apache 2.4 (manuell: <strong>sudo service apache2 restart</strong>)</li>
+</ul>
+<ul>
+<li>Port 80 wird auf 80 gemappt, ServerName ist <strong>localhost (/etc/apache2/sites-available/000-default.conf)</strong></li>
+<li>DOCUMENT ROOT ist <strong>/asmus/virtual-machines/boxshare01/apache2docroot</strong></li>
+<li>VHOSTS werden in der Box angelegt <strong>/etc/apache2/sites-enabled/*.conf</strong> (/etc/apache2/sites-available/*.conf oder als symlinks nach /win/c/asmus/.../*.conf), <br />auch DNS technisch: <strong>/etc/hosts</strong></li>
+</ul>
+<p>Siehe auch <a href="note.php?submit=DocumentNote@@2015-09-11_07-46-00__show">vagrant</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>°date§27.9.2016°files§

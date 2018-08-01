@@ -1,0 +1,14 @@
+id§NOT_1499076262_9332031°datum§07.07.2017°DatumE§2017-07-07-00-00-00_NOT_1499076262_9332031°quelle§persistent°name§Checkliste: Neues Projekt°kategorien§.checkliste°info§°text§<br/>-----<br/><ul>
+<li>&nbsp;Verzeichnis erstellen aus Kopie von /$asm_projekte/project.VORLAGE:</li>
+</ul>
+<pre>asm project create &lt;project name&gt;
+</pre>
+<p>&nbsp;</p>
+<ul>
+<li>vagrant/Vagrantfile einrichten</li>
+<li>bash-project/.bashrc.XYZ einrichten</li>
+<li>Outlook Kategorie festlegen</li>
+<li>URLs</li>
+<li>Abrechnung: track.de/track, Budgetplanung</li>
+<li>Netbeans: Project Group, Project&nbsp;</li>
+</ul>°date§11.9.2015°files§

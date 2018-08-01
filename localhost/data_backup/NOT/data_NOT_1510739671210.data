@@ -1,0 +1,2 @@
+id§NOT_1510739671210°datum§15.11.2017°DatumE§2017-11-15-00-00-00_NOT_1510739671210°art§°name§rsyslogd°info§<p><br></p>°text§<p><br></p><br/>-----<br/><p class="MsoPlainText">logger -p local1. info "Starting upstart
+service"</p><p class="MsoPlainText">etc/syslog.d syslog.conf</p><p class="MsoPlainText">&nbsp;<o:p></o:p></p><p class="MsoPlainText"><o:p></o:p></p>°files§
